@@ -1,3 +1,16 @@
+# Note: this rocket_cors is patched to use rocket 0.5.0-dev
+
+Typically, your will not build `rocket_cors` on its own, but your project will depend on `rocket_cors`.
+In that project, append to your `Cargo.toml`:
+
+```
+[dependencies]
+rocket = {git="https://github.com/SergioBenitez/Rocket", branch="master"}
+
+[patch.crates-io]
+rocket = {git="https://github.com/SergioBenitez/Rocket", branch="master"}
+```
+
 # rocket_cors
 
 [![Build Status](https://travis-ci.org/lawliet89/rocket_cors.svg)](https://travis-ci.org/lawliet89/rocket_cors)
